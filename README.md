@@ -45,16 +45,15 @@ Create the following as /etc/systemd/system/reverse-text.service
 [Unit]
 Description=Reverse Text demo service
 After=network.target
+# Not used in Ubuntu 18
 #StartLimitIntervalSec=0
-# Ubuntu 18
-DefaultStartLimitInterval=0
 
 [Service]
 Type=simple
 Restart=always
 RestartSec=1
 User=jkstill
-ExecStart=/usr/bin/env perl /home/jkstill/linux/systemd-service/reverse-service.pl
+ExecStart=/usr/bin/env perl /home/jkstill/linux/systemd-service-example/reverse-service.pl
 
 [Install]
 WantedBy=multi-user.target
