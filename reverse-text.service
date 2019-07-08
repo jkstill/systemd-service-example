@@ -1,9 +1,8 @@
 [Unit]
 Description=Reverse Text demo service
 After=network.target
+# Not used in Ubuntu 18
 #StartLimitIntervalSec=0
-# Ubuntu 18
-DefaultStartLimitInterval=0
 
 [Service]
 Type=simple
