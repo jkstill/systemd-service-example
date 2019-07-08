@@ -59,6 +59,8 @@ ExecStart=/usr/bin/env perl /home/jkstill/linux/systemd-service-example/reverse-
 WantedBy=multi-user.target
 ```
 
+Start the service
+
 ```bash
 systemctl start reverse-text
 ```
